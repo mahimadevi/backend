@@ -35,6 +35,9 @@ app.listen(port, () => {
   console.log(`server is running on port number ${port}`);
   connect();
 });
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
 
 
 DefaultData();
